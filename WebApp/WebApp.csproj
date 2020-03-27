@@ -125,9 +125,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="Pages\ReceivingPage.aspx" />
-    <Content Include="Pages\MultiRecordQueryWithCustomGridView.aspx" />
-    <Content Include="Pages\MultiRecordQueryWithDefaultGridView.aspx" />
+    <Content Include="Pages\CRUDPage.aspx" />
+    <Content Include="Pages\MultiRecordQueryDDtoCustomGridView.aspx" />
+    <Content Include="Pages\MultiRecordQueryDDtoDefaultGridView.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -298,26 +298,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ReceivingPage.aspx.cs">
-      <DependentUpon>ReceivingPage.aspx</DependentUpon>
+    <Compile Include="Pages\CRUDPage.aspx.cs">
+      <DependentUpon>CRUDPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\ReceivingPage.aspx.designer.cs">
-      <DependentUpon>ReceivingPage.aspx</DependentUpon>
+    <Compile Include="Pages\CRUDPage.aspx.designer.cs">
+      <DependentUpon>CRUDPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryWithCustomGridView.aspx.cs">
-      <DependentUpon>MultiRecordQueryWithCustomGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordQueryDDtoCustomGridView.aspx.cs">
+      <DependentUpon>MultiRecordQueryDDtoCustomGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryWithCustomGridView.aspx.designer.cs">
-      <DependentUpon>MultiRecordQueryWithCustomGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordQueryDDtoCustomGridView.aspx.designer.cs">
+      <DependentUpon>MultiRecordQueryDDtoCustomGridView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryWithDefaultGridView.aspx.cs">
-      <DependentUpon>MultiRecordQueryWithDefaultGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordQueryDDtoDefaultGridView.aspx.cs">
+      <DependentUpon>MultiRecordQueryDDtoDefaultGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryWithDefaultGridView.aspx.designer.cs">
-      <DependentUpon>MultiRecordQueryWithDefaultGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordQueryDDtoDefaultGridView.aspx.designer.cs">
+      <DependentUpon>MultiRecordQueryDDtoDefaultGridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

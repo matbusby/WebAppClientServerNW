@@ -8,9 +8,9 @@ using System.Web.UI.WebControls;
 using DBSystem.BLL;
 using DBSystem.ENTITIES;
 
-namespace WebApp.ExercisePages
+namespace WebApp.Pages
 {
-    public partial class MultiRecordQueryWithDefaultGridView : System.Web.UI.Page
+    public partial class MultiRecordQueryDDtoCustomGridView : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -61,6 +61,17 @@ namespace WebApp.ExercisePages
                     MessageLabel.Text = ex.Message;
                 }
             }
+        }
+        protected void List02_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            List02.PageIndex = e.NewPageIndex;
+            Fetch_Click(sender, new EventArgs());
+        }
+        protected void List02_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow agvrow = List02.Rows[List02.SelectedIndex];
+            string productid = (agvrow.FindControl("ProductID") as Label).Text;
+            Response.Redirect("CRUDPage.aspx?pid=" + productid);
         }
     }
 }

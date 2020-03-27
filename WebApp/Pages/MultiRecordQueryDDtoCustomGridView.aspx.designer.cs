@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp.ExercisePages
+namespace WebApp.Pages
 {
 
 
-    public partial class MultiRecordQueryWithCustomGridView
+    public partial class MultiRecordQueryDDtoCustomGridView
     {
 
         /// <summary>
