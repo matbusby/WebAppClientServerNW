@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MultiRecordQueryDDtoCustomGridView.aspx.cs" Inherits="WebApp.Pages.MultiRecordQueryDDtoCustomGridView" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MultiRecordDropdownToCustomGridView.aspx.cs" Inherits="WebApp.Pages.MultiRecordDropdownToCustomGridView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <h1> Multi Record Query with Custom GridView</h1>
     <div class="offset-2">

@@ -62,12 +62,12 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarSubMenu">
                                     
                                     <a class="dropdown-item"
-                                            href="~/Pages/MultiRecordQueryDDtoDefaultGridView.aspx"
+                                            href="~/Pages/MultiRecordDropdownToDefaultGridView.aspx"
                                             style="color:black" runat="server">
                                             Multi Record Query with Default GridView
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/MultiRecordQueryDDtoCustomGridView.aspx"
+                                            href="~/Pages/MultiRecordDropdownToCustomGridView.aspx"
                                             style="color:black" runat="server">
                                             Multi Record Query with Custom GridView
                                     </a>

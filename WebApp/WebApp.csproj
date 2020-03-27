@@ -126,8 +126,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Pages\CRUDPage.aspx" />
-    <Content Include="Pages\MultiRecordQueryDDtoCustomGridView.aspx" />
-    <Content Include="Pages\MultiRecordQueryDDtoDefaultGridView.aspx" />
+    <Content Include="Pages\MultiRecordDropdownToCustomGridView.aspx" />
+    <Content Include="Pages\MultiRecordDropdownToDefaultGridView.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -305,19 +305,19 @@
     <Compile Include="Pages\CRUDPage.aspx.designer.cs">
       <DependentUpon>CRUDPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryDDtoCustomGridView.aspx.cs">
-      <DependentUpon>MultiRecordQueryDDtoCustomGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordDropdownToCustomGridView.aspx.cs">
+      <DependentUpon>MultiRecordDropdownToCustomGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryDDtoCustomGridView.aspx.designer.cs">
-      <DependentUpon>MultiRecordQueryDDtoCustomGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordDropdownToCustomGridView.aspx.designer.cs">
+      <DependentUpon>MultiRecordDropdownToCustomGridView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryDDtoDefaultGridView.aspx.cs">
-      <DependentUpon>MultiRecordQueryDDtoDefaultGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordDropdownToDefaultGridView.aspx.cs">
+      <DependentUpon>MultiRecordDropdownToDefaultGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\MultiRecordQueryDDtoDefaultGridView.aspx.designer.cs">
-      <DependentUpon>MultiRecordQueryDDtoDefaultGridView.aspx</DependentUpon>
+    <Compile Include="Pages\MultiRecordDropdownToDefaultGridView.aspx.designer.cs">
+      <DependentUpon>MultiRecordDropdownToDefaultGridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

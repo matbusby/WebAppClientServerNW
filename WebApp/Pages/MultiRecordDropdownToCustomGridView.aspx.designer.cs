@@ -11,7 +11,7 @@ namespace WebApp.Pages
 {
 
 
-    public partial class MultiRecordQueryDDtoCustomGridView
+    public partial class MultiRecordDropdownToCustomGridView
     {
 
         /// <summary>
