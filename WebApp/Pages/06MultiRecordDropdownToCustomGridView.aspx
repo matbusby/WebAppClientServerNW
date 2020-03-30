@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="06MultiRecordDropdownToCustomGridView.aspx.cs" Inherits="WebApp.Pages._06MultiRecordDropdownToCustomGridView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <h1> Multi Record Query Dropdown to Custom GridView to Single Record</h1>
+        <h1> Multi Record Query Dropdown to Custom GridView (Ex06)</h1>
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select an Item: "></asp:Label>&nbsp;&nbsp;   
         <asp:DropDownList ID="List01" runat="server"></asp:DropDownList>&nbsp;&nbsp;
@@ -13,13 +13,9 @@
             AutoGenerateColumns="False"
             CssClass="table table-striped" GridLines="Horizontal"
             BorderStyle="None" AllowPaging="True"
-            OnPageIndexChanging="List02_PageIndexChanging" PageSize="5"
-            OnSelectedIndexChanged="List02_SelectedIndexChanged">
+            OnPageIndexChanging="List02_PageIndexChanging" PageSize="5">
 
             <Columns>
-                <asp:CommandField SelectText="View" ShowSelectButton="True" 
-                    ButtonType="Button" CausesValidation="false">
-                </asp:CommandField>
                 <asp:TemplateField HeaderText="ID" Visible="True">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                     <ItemTemplate>

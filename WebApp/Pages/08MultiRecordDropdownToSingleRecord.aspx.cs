@@ -10,7 +10,7 @@ using DBSystem.ENTITIES;
 
 namespace WebApp.Pages
 {
-    public partial class _10MultiRecordDropToDropToSingleRec : System.Web.UI.Page
+    public partial class _08MultiRecordDropdownToSingleRecord : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,13 +24,13 @@ namespace WebApp.Pages
         {
             try
             {
-                Controller01 sysmgr = new Controller01();
-                List<Entity01> info = null;
+                Controller02 sysmgr = new Controller02();
+                List<Entity02> info = null;
                 info = sysmgr.List();
-                info.Sort((x, y) => x.CategoryName.CompareTo(y.CategoryName));
+                info.Sort((x, y) => x.ProductName.CompareTo(y.ProductName));
                 List01.DataSource = info;
-                List01.DataTextField = nameof(Entity01.CategoryName);
-                List01.DataValueField = nameof(Entity01.CategoryID);
+                List01.DataTextField = nameof(Entity02.ProductName);
+                List01.DataValueField = nameof(Entity02.ProductID);
                 List01.DataBind();
                 List01.Items.Insert(0, "select...");
             }

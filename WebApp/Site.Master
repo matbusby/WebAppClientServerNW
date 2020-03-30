@@ -65,38 +65,39 @@
                                             style="color:black" runat="server">
                                             01-Single Record Query using Primary Key (Ex05)
                                     </a>
-                                    <a class="dropdown-item"
-                                            href="~/Pages/02MultiRecordDropdownToSingleRecord.aspx"
-                                            style="color:black" runat="server">
-                                            02-Multi Record Query Dropdown to Single Record via Page Navigation (Ex09,10)
-                                    </a>
+                                    
                                     <a class="dropdown-item"
                                             href="~/Pages/04MultiRecordDropdownToDefaultGridView.aspx"
                                             style="color:black" runat="server">
-                                            03-Multi Record Query Dropdown to Default GridView
+                                            02-Multi Record Query Dropdown to Default GridView
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/06MultiRecordDropdownToCustomGridView.aspx"
                                             style="color:black" runat="server">
-                                            04-Multi Record Query Dropdown to Custom GridView (Ex06)
+                                            03-Multi Record Query Dropdown to Custom GridView (Ex06)
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/08MultiRecDropToCustGridViewToSingleRec.aspx"
+                                            href="~/Pages/08MultiRecordDropdownToSingleRecord.aspx"
+                                            style="color:black" runat="server">
+                                            04-Multi Record Query Dropdown to Single Record via Page Navigation (Ex09,10)
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/Pages/10MultiRecDropToCustGridViewToSingleRec.aspx"
                                             style="color:black" runat="server">
                                             05-Multi Record Query Dropdown to Custom GridView to Single Record via Page Navigation (Project)
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/10MultiRecDropToDropToSingleRec.aspx"
+                                            href="~/Pages/12MultiRecDropToDropToSingleRec.aspx"
                                             style="color:black" runat="server">
                                             06-Multi Record Query Dropdown to another Dropdown to Single Record via Page Navigation (Project)
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/12PartialStringSearchToCustGridViewToSingleRec.aspx"
+                                            href="~/Pages/14PartialStringSearchToCustGridViewToSingleRec.aspx"
                                             style="color:black" runat="server">
                                             07-Partial String Search to Custom GridView to Single Record via Page Navigation (Project
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/14PartialStringSearchToDropToSingleRec.aspx"
+                                            href="~/Pages/16PartialStringSearchToDropToSingleRec.aspx"
                                             style="color:black" runat="server">
                                             08-Partial String Search to Dropdown to Single Record via Page Navigation (Project)
                                     </a>

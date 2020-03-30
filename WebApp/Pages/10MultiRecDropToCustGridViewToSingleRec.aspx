@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="08MultiRecDropToCustGridViewToSingleRec.aspx.cs" Inherits="WebApp.Pages._08MultiRecDropToCustGridViewToSingleRec" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="10MultiRecDropToCustGridViewToSingleRec.aspx.cs" Inherits="WebApp.Pages._10MultiRecDropToCustGridViewToSingleRec" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <h1> Multi Record Query Dropdown to Custom GridView to Single Record</h1>
+        <h1> Multi Record Query Dropdown to Custom GridView to Single Record via Page Navigation</h1>
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select an Item: "></asp:Label>&nbsp;&nbsp;   
         <asp:DropDownList ID="List01" runat="server"></asp:DropDownList>&nbsp;&nbsp;
