@@ -16,7 +16,7 @@ namespace WebApp.Pages
                 string pid = Request.QueryString["pid"];
                 if (string.IsNullOrEmpty(pid))
                 {
-                    Response.Redirect("MultiRecordDropdownToCustomGridView.aspx");
+                    Response.Redirect("~/Default.aspx");
                 }
                 else
                 {
@@ -28,7 +28,7 @@ namespace WebApp.Pages
 
         protected void Back_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MultiRecordDropdownToCustomGridView.aspx");
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

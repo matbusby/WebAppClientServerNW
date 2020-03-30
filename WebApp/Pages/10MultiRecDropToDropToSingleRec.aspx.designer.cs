@@ -11,7 +11,7 @@ namespace WebApp.Pages
 {
 
 
-    public partial class MultiRecordDropdownToCustomGridView
+    public partial class _10MultiRecordDropToDropToSingleRec
     {
 
         /// <summary>
@@ -49,14 +49,5 @@ namespace WebApp.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label MessageLabel;
-
-        /// <summary>
-        /// List02 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView List02;
     }
 }

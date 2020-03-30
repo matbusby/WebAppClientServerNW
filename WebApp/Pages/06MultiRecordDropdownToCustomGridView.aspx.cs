@@ -10,7 +10,7 @@ using DBSystem.ENTITIES;
 
 namespace WebApp.Pages
 {
-    public partial class MultiRecordDropdownToCustomGridView : System.Web.UI.Page
+    public partial class _06MultiRecordDropdownToCustomGridView : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MultiRecordDropdownToCustomGridView.aspx.cs" Inherits="WebApp.Pages.MultiRecordDropdownToCustomGridView" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="06MultiRecordDropdownToCustomGridView.aspx.cs" Inherits="WebApp.Pages._06MultiRecordDropdownToCustomGridView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <h1> Multi Record Query with Custom GridView</h1>
+        <h1> Multi Record Query Dropdown to Custom GridView to Single Record</h1>
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select an Item: "></asp:Label>&nbsp;&nbsp;   
         <asp:DropDownList ID="List01" runat="server"></asp:DropDownList>&nbsp;&nbsp;
@@ -68,3 +68,4 @@
         </asp:GridView>
     </div>
 </asp:Content>
+

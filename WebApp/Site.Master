@@ -60,16 +60,45 @@
                                         Pages
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarSubMenu">
-                                    
                                     <a class="dropdown-item"
-                                            href="~/Pages/MultiRecordDropdownToDefaultGridView.aspx"
+                                            href="~/Pages/01SingleRecordQuery.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query with Default GridView
+                                            Single Record Query using Primary Key
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/MultiRecordDropdownToCustomGridView.aspx"
+                                            href="~/Pages/02MultiRecordDropdownToSingleRecord.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query with Custom GridView
+                                            Multi Record Query Dropdown to Single Record
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/Pages/04MultiRecordDropdownToDefaultGridView.aspx"
+                                            style="color:black" runat="server">
+                                            Multi Record Query Dropdown to Default GridView
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/Pages/06MultiRecordDropdownToCustomGridView.aspx"
+                                            style="color:black" runat="server">
+                                            Multi Record Query Dropdown to Custom GridView
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/Pages/08MultiRecDropToCustGridViewToSingleRec.aspx"
+                                            style="color:black" runat="server">
+                                            Multi Record Query Dropdown to Custom GridView to Single Record via Page Navigation
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/Pages/10MultiRecDropToDropToSingleRec.aspx"
+                                            style="color:black" runat="server">
+                                            Multi Record Query Dropdown to another Dropdown to Single Record via Page Navigation
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/Pages/12PartialStringSearchToCustGridViewToSingleRec.aspx"
+                                            style="color:black" runat="server">
+                                            Partial String Search to Custom GridView to Single Record via Page Navigation
+                                    </a>
+                                    <a class="dropdown-item"
+                                            href="~/Pages/14PartialStringSearchToDropToSingleRec.aspx"
+                                            style="color:black" runat="server">
+                                            Partial String Search to Dropdown to Single Record via Page Navigation
                                     </a>
                                     
                                 </div>
