@@ -63,42 +63,42 @@
                                     <a class="dropdown-item"
                                             href="~/Pages/01SingleRecordQuery.aspx"
                                             style="color:black" runat="server">
-                                            Single Record Query using Primary Key
+                                            01-Single Record Query using Primary Key (Ex05)
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/02MultiRecordDropdownToSingleRecord.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query Dropdown to Single Record
+                                            02-Multi Record Query Dropdown to Single Record (Ex09,10)
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/04MultiRecordDropdownToDefaultGridView.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query Dropdown to Default GridView
+                                            03-Multi Record Query Dropdown to Default GridView
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/06MultiRecordDropdownToCustomGridView.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query Dropdown to Custom GridView
+                                            04-Multi Record Query Dropdown to Custom GridView (Ex06)
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/08MultiRecDropToCustGridViewToSingleRec.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query Dropdown to Custom GridView to Single Record via Page Navigation
+                                            05-Multi Record Query Dropdown to Custom GridView to Single Record via Page Navigation (Project)
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/10MultiRecDropToDropToSingleRec.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query Dropdown to another Dropdown to Single Record via Page Navigation
+                                            06-Multi Record Query Dropdown to another Dropdown to Single Record via Page Navigation (Project)
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/12PartialStringSearchToCustGridViewToSingleRec.aspx"
                                             style="color:black" runat="server">
-                                            Partial String Search to Custom GridView to Single Record via Page Navigation
+                                            07-Partial String Search to Custom GridView to Single Record via Page Navigation (Project
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/14PartialStringSearchToDropToSingleRec.aspx"
                                             style="color:black" runat="server">
-                                            Partial String Search to Dropdown to Single Record via Page Navigation
+                                            08-Partial String Search to Dropdown to Single Record via Page Navigation (Project)
                                     </a>
                                     
                                 </div>

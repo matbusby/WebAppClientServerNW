@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="02MultiRecordDropdownToSingleRecord.aspx.cs" Inherits="WebApp.Pages._02MultiRecordDropdownToSingleRecord" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1> Multi Record Query Dropdown to Single Record via Page Navigation</h1>
+    <h1> Multi Record Query Dropdown to Single Record via Page Navigation (EX09)</h1>
     <div class="offset-2">
         <asp:Label ID="Label1" runat="server" Text="Select an Item: "></asp:Label>&nbsp;&nbsp;   
         <asp:DropDownList ID="List01" runat="server"></asp:DropDownList>&nbsp;&nbsp;
