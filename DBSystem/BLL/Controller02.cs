@@ -29,5 +29,16 @@ namespace DBSystem.BLL
                 return results.ToList();
             }
         }
+
+        public List<Entity02> FindByPartialName(string partialname)
+        {
+            using (var context = new Context())
+            {
+                IEnumerable<Entity02> results =
+                    context.Database.SqlQuery<Entity02>("Products_GetByPartialProductName @PartialName",
+                                    new SqlParameter("PartialName", partialname));
+                return results.ToList();
+            }
+        }
     }
 }
