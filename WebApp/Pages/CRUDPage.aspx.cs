@@ -24,7 +24,7 @@ namespace WebApp.Pages
                 }
                 else
                 {
-                    MessageLabel.Text = "you passed the following data: >" + pid + "<";
+                    MessageLabel.Text = "you passed the following data: " + pid;
                 }
             }
 
@@ -34,39 +34,22 @@ namespace WebApp.Pages
         {
             Response.Redirect("~/Default.aspx");
         }
-
-
-
-
-        protected void Add_Click(object sender, EventArgs e)
-        {
-            //MessageLabel.Text = "SIN = " + SIN.Text + " Name = " + Name.Text;
-            //if (Page.IsValid)
-            //{
-            //    bool found = false;
-            //    foreach (var item in Entity02List)
-            //    {
-            //        if (item.ProductID == ID.Text)
-            //        {
-            //            found = true;
-            //        }
-            //    }
-            //    if (found)
-            //    {
-            //        MessageLabel.Text = "Record already exists.";
-            //    }
-            //    else
-            //    {
-            //        Person newitem = new Person(SIN.Text, Name.Text, int.Parse(Age.Text), double.Parse(Wage.Text), Phone.Text);
-            //        People.Add(newitem);
-            //        PeopleGridView.DataSource = People;
-            //        PeopleGridView.DataBind();
-            //    }
-            //}
-        }
         protected void Clear_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Add_Click(object sender, EventArgs e)
         {
             
         }
+        protected void Update_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Discontinue_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

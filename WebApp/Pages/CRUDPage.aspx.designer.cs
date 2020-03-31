@@ -24,15 +24,6 @@ namespace WebApp.Pages
         protected global::System.Web.UI.WebControls.Label MessageLabel;
 
         /// <summary>
-        /// Back control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Back;
-
-        /// <summary>
         /// RequiredProductName control.
         /// </summary>
         /// <remarks>
@@ -267,13 +258,13 @@ namespace WebApp.Pages
         protected global::System.Web.UI.WebControls.CheckBox Discontinued;
 
         /// <summary>
-        /// AddButton control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddButton;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// ClearButton control.
@@ -285,21 +276,30 @@ namespace WebApp.Pages
         protected global::System.Web.UI.WebControls.Button ClearButton;
 
         /// <summary>
-        /// Label5 control.
+        /// AddButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Button AddButton;
 
         /// <summary>
-        /// PeopleGridView control.
+        /// UpdateButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView PeopleGridView;
+        protected global::System.Web.UI.WebControls.Button UpdateButton;
+
+        /// <summary>
+        /// DiscontinueButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DiscontinueButton;
     }
 }

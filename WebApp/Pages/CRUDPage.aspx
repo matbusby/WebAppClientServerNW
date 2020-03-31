@@ -2,35 +2,35 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>CRUD Page</h1>
     <asp:Label ID="MessageLabel" runat="server" ></asp:Label><br />
-    <asp:Button ID="Back" runat="server" Text="Back" CausesValidation="false" OnClick="Back_Click" />
-    
-     <div class="row">
+    <div class="row">
         <div class="col-md-12 alert alert-info">
-            This demo will show basic web form construction, validation, data collection and display.
+            Products CRUD Page
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 text-left">
             <asp:RequiredFieldValidator ID="RequiredProductName" runat="server"
-        ErrorMessage="Product name is required" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
-         ControlToValidate="ProductName"> </asp:RequiredFieldValidator>
-    <asp:CompareValidator ID="CompareUnitPrice" runat="server" 
-        ErrorMessage="Unit Price must be 0.00 or greater" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
-         ControlToValidate="UnitPrice" Operator="GreaterThanEqual" ValueToCompare="0.00" Type="Double"> </asp:CompareValidator>
-    <asp:RangeValidator ID="RangeUnitsInStock" runat="server" 
-        ErrorMessage="Units in stock must be between 0 and 32767" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
-         ControlToValidate="UnitsInStock"  MaximumValue="32767" MinimumValue="0" Type="Integer"> </asp:RangeValidator>
-    <asp:RangeValidator ID="RangeUnitsOnOrder" runat="server" 
-        ErrorMessage="Units on order must be between 0 and 32767" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
-         ControlToValidate="UnitsOnOrder"  MaximumValue="32767" MinimumValue="0" Type="Integer"> </asp:RangeValidator>
-    <asp:RangeValidator ID="RangeReorderLevel" runat="server" 
-        ErrorMessage="Reorder levlel must be between 0 and 32767" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
-         ControlToValidate="ReorderLevel"  MaximumValue="32767" MinimumValue="0" Type="Integer"> </asp:RangeValidator>
-   
-    <%-- validation summary control--%>
-    <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
-         HeaderText="Address the following concerns with your entered data."/>
-
+                ErrorMessage="Product name is required" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
+                ControlToValidate="ProductName"> 
+            </asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareUnitPrice" runat="server" 
+                ErrorMessage="Unit Price must be 0.00 or greater" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
+                 ControlToValidate="UnitPrice" Operator="GreaterThanEqual" ValueToCompare="0.00" Type="Double"> 
+            </asp:CompareValidator>
+            <asp:RangeValidator ID="RangeUnitsInStock" runat="server" 
+                ErrorMessage="Units in stock must be between 0 and 32767" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
+                 ControlToValidate="UnitsInStock"  MaximumValue="32767" MinimumValue="0" Type="Integer"> 
+            </asp:RangeValidator>
+            <asp:RangeValidator ID="RangeUnitsOnOrder" runat="server" 
+                ErrorMessage="Units on order must be between 0 and 32767" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
+                 ControlToValidate="UnitsOnOrder"  MaximumValue="32767" MinimumValue="0" Type="Integer"> 
+            </asp:RangeValidator>
+            <asp:RangeValidator ID="RangeReorderLevel" runat="server" 
+                ErrorMessage="Reorder levlel must be between 0 and 32767" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
+                 ControlToValidate="ReorderLevel"  MaximumValue="32767" MinimumValue="0" Type="Integer"> 
+            </asp:RangeValidator>
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
+                 HeaderText="Address the following concerns with your entered data."/>
         </div>
     </div>
  
@@ -143,14 +143,12 @@
     <div class="row">
         <div class="col-md-4">
         </div>
-        <div class="col-md-4 text-left">
+        <div class="col-md-6 text-left">
+            <asp:Button ID="Button1" runat="server" Text="Back" CausesValidation="false" OnClick="Back_Click" />&nbsp;&nbsp;
+            <asp:Button ID="ClearButton" runat="server" OnClick="Clear_Click" Text="Clear" CausesValidation="false"/>&nbsp;&nbsp;
             <asp:Button ID="AddButton" runat="server" OnClick="Add_Click" Text="Add"/>&nbsp;&nbsp;
-            <asp:Button ID="ClearButton" runat="server" OnClick="Clear_Click" Text="Clear" CausesValidation="false"/>
-            <br/><br/>
-            <asp:Label ID="Label5" runat="server" ></asp:Label>
-            <br/><br/>
-            <asp:GridView ID="PeopleGridView" runat="server"></asp:GridView>
+            <asp:Button ID="UpdateButton" runat="server" OnClick="Update_Click" Text="Update"/>&nbsp;&nbsp;
+            <asp:Button ID="DiscontinueButton" runat="server" OnClick="Discontinue_Click" Text="Discontinue"/>&nbsp;&nbsp;
         </div>
     </div>
-    <%--<script src="Scripts/bootwrap-freecode.js"></script>--%>
 </asp:Content>
