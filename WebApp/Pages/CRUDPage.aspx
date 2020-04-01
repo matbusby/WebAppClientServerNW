@@ -33,7 +33,11 @@
                  HeaderText="Address the following concerns with your entered data."/>
         </div>
     </div>
- 
+    <asp:DataList ID="Message" runat="server">
+        <ItemTemplate>
+            <%# Container.DataItem %>
+        </ItemTemplate>
+    </asp:DataList>
     <div class="row">
         <div class="col-md-4 text-right">
                 <asp:Label ID="Label1" runat="server" Text="Product ID"
