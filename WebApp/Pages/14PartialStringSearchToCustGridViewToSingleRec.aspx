@@ -6,9 +6,9 @@
         <ItemTemplate>
             <%# Container.DataItem %>
         </ItemTemplate>
-    </asp:DataList>
-    <br />
-        <asp:Label ID="Label1" runat="server" Text="Select an Item: "></asp:Label>&nbsp;&nbsp
+        </asp:DataList>
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Enter a Partial Product Name "></asp:Label>&nbsp;&nbsp
         <asp:TextBox ID="PartialProductNameV2" runat="server"></asp:TextBox>
         <asp:Button ID="SearchProductsPartial" runat="server" Text="Search Products"
             OnClick="SearchProductsPartial_Click" />
@@ -74,6 +74,5 @@
             </EmptyDataTemplate>
             <PagerSettings FirstPageText="Start" LastPageText="End" Mode="NumericFirstLast" PageButtonCount="3" />
         </asp:GridView>
-        
     </div>
 </asp:Content>

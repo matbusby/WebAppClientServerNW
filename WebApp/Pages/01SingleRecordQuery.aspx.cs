@@ -21,7 +21,7 @@ namespace WebApp.Pages
         {
             if (string.IsNullOrEmpty(IDArg.Text))
             {
-                MessageLabel.Text = "Enter a category ID value.";
+                MessageLabel.Text = "Enter a ID value.";
             }
             else
             {
