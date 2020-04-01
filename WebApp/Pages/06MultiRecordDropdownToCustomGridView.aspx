@@ -6,9 +6,38 @@
         <asp:DropDownList ID="List01" runat="server"></asp:DropDownList>&nbsp;&nbsp;
         <asp:Button ID="Fetch" runat="server" Text="Fetch" 
              CausesValidation="false" OnClick="Fetch_Click"/>
-        <br /><br />
-        <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
-        <br />
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right">
+            <asp:Label ID="IDLabel01" runat="server" ></asp:Label>
+        </div>
+        <div class="col-md-4 text-left">
+            <asp:Label ID="IDLabel02" runat="server" ></asp:Label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right">
+            <asp:Label ID="NameLabel01" runat="server" ></asp:Label>
+        </div>
+        <div class="col-md-4 text-left">
+            <asp:Label ID="NameLabel02" runat="server" ></asp:Label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right">
+            <asp:Label ID="DescriptionLabel01" runat="server" ></asp:Label>
+        </div>
+        <div class="col-md-4 text-left">
+            <asp:Label ID="DescriptionLabel02" runat="server" ></asp:Label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right">
+            <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
+        </div>
+    </div>    
+    <br /><br />
+    <div>
         <asp:GridView ID="List02" runat="server" 
             AutoGenerateColumns="False"
             CssClass="table table-striped" GridLines="Horizontal"
