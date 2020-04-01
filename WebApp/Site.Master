@@ -94,7 +94,7 @@
                                     <a class="dropdown-item"
                                             href="~/Pages/14PartialStringSearchToCustGridViewToSingleRec.aspx"
                                             style="color:black" runat="server">
-                                            07-Partial String Search to Custom GridView to Single Record via Page Navigation (Project
+                                            07-Partial String Search to Custom GridView to Single Record via Page Navigation (Project)
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/16PartialStringSearchToDropToSingleRec.aspx"
