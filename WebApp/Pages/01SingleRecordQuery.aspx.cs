@@ -15,6 +15,8 @@ namespace WebApp.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
             MessageLabel.Text = "";
+            ID.Text = "";
+            Name.Text = "";
         }
 
         protected void Fetch_Click(object sender, EventArgs e)
@@ -22,6 +24,8 @@ namespace WebApp.Pages
             if (string.IsNullOrEmpty(IDArg.Text))
             {
                 MessageLabel.Text = "Enter a ID value.";
+                ID.Text = "";
+                Name.Text = "";
             }
             else
             {
@@ -48,12 +52,16 @@ namespace WebApp.Pages
                     else
                     {
                         MessageLabel.Text = "ID must be greater than 0";
+                        ID.Text = "";
+                        Name.Text = "";
                     }
 
                 }
                 else
                 {
                     MessageLabel.Text = "ID must be a number.";
+                    ID.Text = "";
+                    Name.Text = "";
                 }
             }
         }

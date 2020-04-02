@@ -14,7 +14,8 @@ namespace WebApp.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            MessageLabel.Text = "";
+            MessageLabel1.Text = "";
+            MessageLabel2.Text = "";
             if (!Page.IsPostBack)
             {
                 BindList();
@@ -29,33 +30,45 @@ namespace WebApp.Pages
                 info = sysmgr.List();
                 info.Sort((x, y) => x.ProductName.CompareTo(y.ProductName));
                 List01.DataSource = info;
-                List01.DataTextField = nameof(Entity02.ProductName);
+                List01.DataTextField = nameof(Entity02.ProductandID);
                 List01.DataValueField = nameof(Entity02.ProductID);
                 List01.DataBind();
                 List01.Items.Insert(0, "select...");
             }
             catch (Exception ex)
             {
-                MessageLabel.Text = ex.Message;
+                MessageLabel1.Text = ex.Message;
             }
         }
         protected void Fetch_Click(object sender, EventArgs e)
         {
             if (List01.SelectedIndex == 0)
             {
-                MessageLabel.Text = "Select a category to view its products";
+                MessageLabel1.Text = "Select a Product";
             }
             else
             {
                 try
                 {
                     string productid = List01.SelectedValue;
-                    Response.Redirect("CRUDPage.aspx?pid=" + productid);
+                    Response.Redirect("CRUDPage.aspx?pid=" + productid + "&add=" + "no");
                 }
                 catch (Exception ex)
                 {
-                    MessageLabel.Text = ex.Message;
+                    MessageLabel1.Text = ex.Message;
                 }
+            }
+        }
+        protected void Add_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string productid = List01.SelectedIndex.ToString();
+                Response.Redirect("CRUDPage.aspx?pid=" + productid + "&add=" + "yes");
+            }
+            catch (Exception ex)
+            {
+                MessageLabel1.Text = ex.Message;
             }
         }
     }

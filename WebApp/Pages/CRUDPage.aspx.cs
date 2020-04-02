@@ -21,13 +21,15 @@ namespace WebApp.Pages
             if (!Page.IsPostBack)
             {
                 string pid = Request.QueryString["pid"];
+                string add = Request.QueryString["add"];
                 if (string.IsNullOrEmpty(pid))
                 {
                     Response.Redirect("~/Default.aspx");
                 }
                 else
                 {
-                    MessageLabel.Text = "you passed the following data: " + pid;
+                    MessageLabel1.Text = "you passed this ProductID: " + pid;
+                    MessageLabel2.Text = "you passed this Add option: " + add;
                     BindCategoryList();
                     BindSupplierList();
                 }
