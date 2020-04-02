@@ -63,7 +63,7 @@ namespace WebApp.Pages
         {
             try
             {
-                string productid = List01.SelectedIndex.ToString();
+                string productid = List01.SelectedValue;
                 Response.Redirect("CRUDPage.aspx?page=4&pid=" + productid + "&add=" + "yes");
             }
             catch (Exception ex)

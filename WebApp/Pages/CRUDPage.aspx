@@ -1,14 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CRUDPage.aspx.cs" Inherits="WebApp.Pages.CRUDPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Product Maintenance Page</h1>
-    <asp:Label ID="MessageLabel1" runat="server" ></asp:Label><br />
-    <asp:Label ID="MessageLabel2" runat="server" ></asp:Label><br />
-    <asp:Label ID="MessageLabel3" runat="server" ></asp:Label><br />
-    <div class="row">
-        <div class="col-md-12 alert alert-info">
-            
-        </div>
-    </div>
     <div class="row">
         <div class="col-md-12 text-left">
             <asp:RequiredFieldValidator ID="RequiredProductName" runat="server"

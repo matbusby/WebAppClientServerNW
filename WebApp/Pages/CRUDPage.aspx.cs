@@ -26,9 +26,10 @@ namespace WebApp.Pages
                 pagenum = Request.QueryString["page"];
                 pid = Request.QueryString["pid"];
                 add = Request.QueryString["add"];
-                MessageLabel1.Text = "the page you came from is: " + pagenum;
-                MessageLabel2.Text = "you passed this ProductID: " + pid;
-                MessageLabel3.Text = "you passed this Add option: " + add;
+                errormsgs.Add("The page you came from is: " + pagenum + ".  " +
+                              "You passed this ProductID: " + pid + ".  " +
+                              "You passed this Add option: " + add);
+                LoadMessageDisplay(errormsgs, "alert alert-info");
                 BindCategoryList();
                 BindSupplierList();
                 if (string.IsNullOrEmpty(pid))
