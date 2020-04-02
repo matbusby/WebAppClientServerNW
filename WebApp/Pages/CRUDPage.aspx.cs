@@ -12,6 +12,9 @@ namespace WebApp.Pages
 {
     public partial class CRUDPage : System.Web.UI.Page
     {
+        static string pagenum = "";
+        static string pid = "";
+        static string add = "";
         List<string> errormsgs = new List<string>();
         private static List<Entity02> Entity02List = new List<Entity02>();
         protected void Page_Load(object sender, EventArgs e)
@@ -20,10 +23,12 @@ namespace WebApp.Pages
             Message.DataBind();
             if (!Page.IsPostBack)
             {
-                string pid = Request.QueryString["pid"];
-                string add = Request.QueryString["add"];
-                MessageLabel1.Text = "you passed this ProductID: " + pid;
-                MessageLabel2.Text = "you passed this Add option: " + add;
+                pagenum = Request.QueryString["page"];
+                pid = Request.QueryString["pid"];
+                add = Request.QueryString["add"];
+                MessageLabel1.Text = "the page you came from is: " + pagenum;
+                MessageLabel2.Text = "you passed this ProductID: " + pid;
+                MessageLabel3.Text = "you passed this Add option: " + add;
                 BindCategoryList();
                 BindSupplierList();
                 if (string.IsNullOrEmpty(pid))
@@ -98,7 +103,6 @@ namespace WebApp.Pages
         }
         protected void BindCategoryList()
         {
-            //standard lookup
             try
             {
                 Controller01 sysmgr = new Controller01();
@@ -120,7 +124,6 @@ namespace WebApp.Pages
         }
         protected void BindSupplierList()
         {
-            //standard lookup
             try
             {
                 Controller03 sysmgr = new Controller03();
@@ -142,7 +145,14 @@ namespace WebApp.Pages
         }
         protected void Back_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Default.aspx");
+            if (pagenum == "4")
+            {
+                Response.Redirect("08MultiRecordDropdownToSingleRecord.aspx");
+            }
+            else
+            {
+                Response.Redirect("~/Default.aspx");
+            }
         }
         protected void Clear_Click(object sender, EventArgs e)
         {
