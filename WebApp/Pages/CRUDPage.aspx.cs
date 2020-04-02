@@ -22,16 +22,62 @@ namespace WebApp.Pages
             {
                 string pid = Request.QueryString["pid"];
                 string add = Request.QueryString["add"];
+                MessageLabel1.Text = "you passed this ProductID: " + pid;
+                MessageLabel2.Text = "you passed this Add option: " + add;
+                BindCategoryList();
+                BindSupplierList();
                 if (string.IsNullOrEmpty(pid))
                 {
                     Response.Redirect("~/Default.aspx");
                 }
+                else if(add == "yes")
+                {
+                    
+                }
                 else
                 {
-                    MessageLabel1.Text = "you passed this ProductID: " + pid;
-                    MessageLabel2.Text = "you passed this Add option: " + add;
-                    BindCategoryList();
-                    BindSupplierList();
+                    Controller02 sysmgr = new Controller02();
+                    Entity02 info = null;
+                    info = sysmgr.FindByPKID(int.Parse(pid));
+                    if (info == null)
+                    {
+                        errormsgs.Add("Product is no longer on file.");
+                        LoadMessageDisplay(errormsgs, "alert alert-info");
+                        Clear_Click(sender, e);
+                    }
+                    else
+                    {
+                        ProductID.Text = info.ProductID.ToString();
+                        ProductName.Text = info.ProductName;
+                        QuantityPerUnit.Text =
+                            info.QuantityPerUnit == null ? "" : info.QuantityPerUnit;
+                        UnitPrice.Text =
+                            info.UnitPrice.HasValue ? string.Format("{0:0.00}", info.UnitPrice.Value) : "";
+                        UnitsInStock.Text =
+                            info.UnitsInStock.HasValue ? info.UnitsInStock.Value.ToString() : "";
+                        UnitsOnOrder.Text =
+                            info.UnitsOnOrder.HasValue ? info.UnitsOnOrder.Value.ToString() : "";
+                        ReorderLevel.Text =
+                            info.ReorderLevel.HasValue ? info.ReorderLevel.Value.ToString() : "";
+                        Discontinued.Checked = info.Discontinued;
+                        if (info.CategoryID.HasValue)
+                        {
+                            CategoryList.SelectedValue = info.CategoryID.ToString();
+                        }
+                        else
+                        {
+                            CategoryList.SelectedIndex = 0;
+                        }
+                        if (info.SupplierID.HasValue)
+                        {
+                            SupplierList.SelectedValue = info.SupplierID.ToString();
+                        }
+                        else
+                        {
+                            SupplierList.SelectedIndex = 0;
+                        }
+                    }
+                    
                 }
             }
 
