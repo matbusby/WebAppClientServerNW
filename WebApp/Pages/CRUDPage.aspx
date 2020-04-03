@@ -3,10 +3,10 @@
     <h1>Product Maintenance Page</h1>
     <div class="row">
         <div class="col-md-12 text-left">
-            <asp:RequiredFieldValidator ID="RequiredProductName" runat="server"
+            <%--<asp:RequiredFieldValidator ID="RequiredProductName" runat="server"
                 ErrorMessage="Product name is required" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
                 ControlToValidate="ProductName"> 
-            </asp:RequiredFieldValidator>
+            </asp:RequiredFieldValidator>--%>
             <asp:CompareValidator ID="CompareUnitPrice" runat="server" 
                 ErrorMessage="Unit Price must be 0.00 or greater" Display="None" SetFocusOnError="true" ForeColor="Firebrick"
                  ControlToValidate="UnitPrice" Operator="GreaterThanEqual" ValueToCompare="0.00" Type="Double"> 

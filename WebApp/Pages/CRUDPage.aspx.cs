@@ -175,6 +175,10 @@ namespace WebApp.Pages
         {
             if (Page.IsValid)
             {
+                if (string.IsNullOrEmpty(ProductName.Text))
+                {
+                    errormsgs.Add("Product Name is required");
+                }
                 if (CategoryList.SelectedIndex == 0)
                 {
                     errormsgs.Add("Category is required");
