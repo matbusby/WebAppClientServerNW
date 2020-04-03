@@ -15,7 +15,6 @@ namespace WebApp.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
             MessageLabel1.Text = "";
-            MessageLabel2.Text = "";
             if (!Page.IsPostBack)
             {
                 BindList();

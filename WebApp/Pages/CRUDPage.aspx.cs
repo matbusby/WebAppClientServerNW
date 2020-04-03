@@ -7,6 +7,9 @@ using System.Web.UI.WebControls;
 
 using DBSystem.BLL;
 using DBSystem.ENTITIES;
+using System.Data.Entity.Validation;
+using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Core;
 
 namespace WebApp.Pages
 {
@@ -170,13 +173,126 @@ namespace WebApp.Pages
         }
         protected void Add_Click(object sender, EventArgs e)
         {
-            
+            if (Page.IsValid)
+            {
+                if (CategoryList.SelectedIndex == 0)
+                {
+                    errormsgs.Add("Category is required");
+                }
+                if (QuantityPerUnit.Text.Length > 20)
+                {
+                    errormsgs.Add("Quantity per Unit is limited to 20 characters");
+                }
+                if (errormsgs.Count > 0)
+                {
+                    LoadMessageDisplay(errormsgs, "alert alert-info");
+                }
+                else
+                {
+                    try
+                    {
+                        Controller02 sysmgr = new Controller02();
+                        Entity02 item = new Entity02();
+                        item.ProductName = ProductName.Text.Trim();
+                        if (CategoryList.SelectedIndex == 0)
+                        {
+                            item.CategoryID = null;
+                        }
+                        else
+                        {
+                            item.CategoryID = int.Parse(CategoryList.SelectedValue);
+                        }
+                        if (SupplierList.SelectedIndex == 0)
+                        {
+                            item.SupplierID = null;
+                        }
+                        else
+                        {
+                            item.SupplierID = int.Parse(SupplierList.SelectedValue);
+                        }
+                        item.QuantityPerUnit =
+                            string.IsNullOrEmpty(QuantityPerUnit.Text) ? null : QuantityPerUnit.Text;
+                        if (string.IsNullOrEmpty(UnitPrice.Text))
+                        {
+                            item.UnitPrice = null;
+                        }
+                        else
+                        {
+                            item.UnitPrice = decimal.Parse(UnitPrice.Text);
+                        }
+                        if (string.IsNullOrEmpty(UnitsInStock.Text))
+                        {
+                            item.UnitsInStock = null;
+                        }
+                        else
+                        {
+                            item.UnitsInStock = Int16.Parse(UnitsInStock.Text);
+                        }
+                        if (string.IsNullOrEmpty(UnitsOnOrder.Text))
+                        {
+                            item.UnitsOnOrder = null;
+                        }
+                        else
+                        {
+                            item.UnitsOnOrder = Int16.Parse(UnitsOnOrder.Text);
+                        }
+                        if (string.IsNullOrEmpty(ReorderLevel.Text))
+                        {
+                            item.ReorderLevel = null;
+                        }
+                        else
+                        {
+                            item.ReorderLevel = Int16.Parse(ReorderLevel.Text);
+                        }
+                        item.Discontinued = false;
+                        int newProductID = sysmgr.Add(item);
+                        ProductID.Text = newProductID.ToString();
+                        errormsgs.Add("Product has been added");
+                        LoadMessageDisplay(errormsgs, "alert alert-success");
+                        //BindProductList(); //by default, list will be at index 0
+                        //ProductList.SelectedValue = ProductID.Text;
+                    }
+                    catch (DbUpdateException ex)
+                    {
+                        UpdateException updateException = (UpdateException)ex.InnerException;
+                        if (updateException.InnerException != null)
+                        {
+                            errormsgs.Add(updateException.InnerException.Message.ToString());
+                        }
+                        else
+                        {
+                            errormsgs.Add(updateException.Message);
+                        }
+                        LoadMessageDisplay(errormsgs, "alert alert-danger");
+                    }
+                    catch (DbEntityValidationException ex)
+                    {
+                        foreach (var entityValidationErrors in ex.EntityValidationErrors)
+                        {
+                            foreach (var validationError in entityValidationErrors.ValidationErrors)
+                            {
+                                errormsgs.Add(validationError.ErrorMessage);
+                            }
+                        }
+                        LoadMessageDisplay(errormsgs, "alert alert-danger");
+                    }
+                    catch (Exception ex)
+                    {
+                        errormsgs.Add(GetInnerException(ex).ToString());
+                        LoadMessageDisplay(errormsgs, "alert alert-danger");
+                    }
+                }
+            }
         }
         protected void Update_Click(object sender, EventArgs e)
         {
 
         }
         protected void Discontinue_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void Delete_Click(object sender, EventArgs e)
         {
 
         }
