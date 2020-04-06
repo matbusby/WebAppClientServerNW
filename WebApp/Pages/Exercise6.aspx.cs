@@ -27,10 +27,10 @@ namespace WebApp.Pages
                 Controller01 sysmgr = new Controller01();
                 List<Entity01> info = null;
                 info = sysmgr.List();
-                info.Sort((x, y) => x.CategoryName.CompareTo(y.CategoryName));
+                info.Sort((x, y) => x.TeamName.CompareTo(y.TeamName));
                 List01.DataSource = info;
-                List01.DataTextField = nameof(Entity01.CategoryName);
-                List01.DataValueField = nameof(Entity01.CategoryID);
+                List01.DataTextField = nameof(Entity01.TeamName);
+                List01.DataValueField = nameof(Entity01.TeamID);
                 List01.DataBind();
                 List01.Items.Insert(0, "select...");
             }
@@ -43,7 +43,7 @@ namespace WebApp.Pages
         {
             if (List01.SelectedIndex == 0)
             {
-                MessageLabel.Text = "Select a category to view its products";
+                MessageLabel.Text = "Select a team";
             }
             else
             {
@@ -52,17 +52,19 @@ namespace WebApp.Pages
                     Controller01 sysmgr01 = new Controller01();
                     Entity01 info01 = null;
                     info01 = sysmgr01.FindByID(int.Parse(List01.SelectedValue));
-                    IDLabel01.Text = "Category ID:";
-                    IDLabel02.Text = info01.CategoryID.ToString();
-                    NameLabel01.Text = "Category Name:";
-                    NameLabel02.Text = info01.CategoryName;
-                    DescriptionLabel01.Text = "Category Description:";
-                    DescriptionLabel02.Text = info01.Description;
+                    CoachLabel01.Text = "Coach: ";
+                    CoachLabel02.Text = info01.Coach;
+                    AssistantCoachLabel01.Text = "Assistant Coach: ";
+                    AssistantCoachLabel02.Text = info01.AssistantCoach;
+                    WinsLabel01.Text = "Wins: ";
+                    WinsLabel02.Text = info01.Wins.ToString();
+                    LossesLabel01.Text = "Losses: ";
+                    LossesLabel02.Text = info01.Losses.ToString();
 
                     Controller02 sysmgr02 = new Controller02();
                     List<Entity02> info02 = null;
                     info02 = sysmgr02.FindByID(int.Parse(List01.SelectedValue));
-                    info02.Sort((x, y) => x.ProductName.CompareTo(y.ProductName));
+                    info02.Sort((x, y) => x.LastName.CompareTo(y.LastName));
                     List02.DataSource = info02;
                     List02.DataBind();
                 }

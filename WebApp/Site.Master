@@ -72,9 +72,9 @@
                                             02-Multi Record Query Dropdown to Default GridView
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/06MultiRecordDropdownToCustomGridView.aspx"
+                                            href="~/Pages/Exercise6.aspx"
                                             style="color:black" runat="server">
-                                            03-Multi Record Query Dropdown to Custom GridView (Ex06)
+                                            Exercise 6
                                     </a>
                                     <a class="dropdown-item"
                                             href="~/Pages/08MultiRecordDropdownToSingleRecord.aspx"

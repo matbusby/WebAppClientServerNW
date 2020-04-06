@@ -127,7 +127,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Pages\01SingleRecordQuery.aspx" />
     <Content Include="Pages\08MultiRecordDropdownToSingleRecord.aspx" />
-    <Content Include="Pages\06MultiRecordDropdownToCustomGridView.aspx" />
+    <Content Include="Pages\Exercise6.aspx" />
     <Content Include="Pages\12MultiRecDropToDropToSingleRec.aspx" />
     <Content Include="Pages\14PartialStringSearchToCustGridViewToSingleRec.aspx" />
     <Content Include="Pages\16PartialStringSearchToDropToSingleRec.aspx" />
@@ -318,12 +318,12 @@
     <Compile Include="Pages\08MultiRecordDropdownToSingleRecord.aspx.designer.cs">
       <DependentUpon>08MultiRecordDropdownToSingleRecord.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\06MultiRecordDropdownToCustomGridView.aspx.cs">
-      <DependentUpon>06MultiRecordDropdownToCustomGridView.aspx</DependentUpon>
+    <Compile Include="Pages\Exercise6.aspx.cs">
+      <DependentUpon>Exercise6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\06MultiRecordDropdownToCustomGridView.aspx.designer.cs">
-      <DependentUpon>06MultiRecordDropdownToCustomGridView.aspx</DependentUpon>
+    <Compile Include="Pages\Exercise6.aspx.designer.cs">
+      <DependentUpon>Exercise6.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\12MultiRecDropToDropToSingleRec.aspx.cs">
       <DependentUpon>12MultiRecDropToDropToSingleRec.aspx</DependentUpon>

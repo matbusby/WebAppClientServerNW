@@ -42,58 +42,76 @@ namespace WebApp.Pages
         protected global::System.Web.UI.WebControls.Button Fetch;
 
         /// <summary>
-        /// IDLabel01 control.
+        /// CoachLabel01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IDLabel01;
+        protected global::System.Web.UI.WebControls.Label CoachLabel01;
 
         /// <summary>
-        /// IDLabel02 control.
+        /// CoachLabel02 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IDLabel02;
+        protected global::System.Web.UI.WebControls.Label CoachLabel02;
 
         /// <summary>
-        /// NameLabel01 control.
+        /// AssistantCoachLabel01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NameLabel01;
+        protected global::System.Web.UI.WebControls.Label AssistantCoachLabel01;
 
         /// <summary>
-        /// NameLabel02 control.
+        /// AssistantCoachLabel02 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NameLabel02;
+        protected global::System.Web.UI.WebControls.Label AssistantCoachLabel02;
 
         /// <summary>
-        /// DescriptionLabel01 control.
+        /// WinsLabel01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DescriptionLabel01;
+        protected global::System.Web.UI.WebControls.Label WinsLabel01;
 
         /// <summary>
-        /// DescriptionLabel02 control.
+        /// WinsLabel02 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DescriptionLabel02;
+        protected global::System.Web.UI.WebControls.Label WinsLabel02;
+
+        /// <summary>
+        /// LossesLabel01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LossesLabel01;
+
+        /// <summary>
+        /// LossesLabel02 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LossesLabel02;
 
         /// <summary>
         /// MessageLabel control.
